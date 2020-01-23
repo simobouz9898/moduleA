@@ -1,0 +1,189 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+h2{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.container{
+  background-color: gray;
+  margin: 0px 70px 0px 70px;
+}
+
+.container > h3{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin:10px;
+}
+
+.container > div {
+  margin: 30px;
+  text-align: justify;
+}
+/** HEADER **/
+#header-nav {
+  background-color: gray;
+  border-radius: 0;
+  border: 3px solid black;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+}
+.navbar-brand h1 { /* name */
+  font-family:serif;
+  color: black;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+  margin:0px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+  color: black;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+ background-color: black;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+.navbar-default .navbar-toggle :hover{
+ background-color: white;
+ color:white;
+}
+/* END HEADER */
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) {
+  .container {
+  margin:0px auto 0px auto;
+  width: 98%
+  }
+    .navbar-brand h1 {
+    font-size: 40px; 
+    margin-left : 10px;
+  }
+
+  .navbar-nav>li {
+    float: left;
+    visibility: hidden;
+}
+
+#header-nav{
+  height: 70px
+}
+
+h2{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding-left : 220px;
+}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+  margin:0px auto 0px auto;
+  }
+      .navbar-brand h1 { /* Restaurant name */
+    font-size: 40px; /* 1vw = 1% of viewport width */
+    margin-left: 40px;
+  }
+
+  .navbar-nav>li {
+    float: left;
+    visibility: hidden;
+}
+
+#header-nav{
+  height: 70px
+}
+
+h2{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding-left : 220px;
+}
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+  #container {
+  margin:0px 30px 0px 30px;
+  }
+
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 6vw; /* 1vw = 1% of viewport width */
+    margin-left: 0px
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    background-color: white;
+    color:black;
+    border: 2px solid black;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #nav-list{
+    margin:0px;
+    padding: 0px;
+    background-color: white;
+  }
+
+.navbar-default .navbar-collapse{
+  padding: 0px;
+}
+}
+
+
+
+
